@@ -6,7 +6,7 @@ using namespace std;
 int factorial(int n){
 // some random comment added to check diff
     if(n<0){
-        printf("please enter a positive number");
+        cout << "please enter a positive number"<<endl;
 //this is 3rd comment
         cin >> n;
     }
