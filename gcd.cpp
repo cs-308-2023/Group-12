@@ -3,18 +3,12 @@
 
 using namespace std;
 
-int gcd(int n1, int n2){
-	if ( n2 > n1) {   
-	    int temp = n2;
-	    n2 = n1;
-	    n1 = temp;
-	  }
-	    
-	  for (int i = 1; i <=  n2; ++i) {
-	    if (n1 % i == 0 && n2 % i ==0) {
-	      hcf = i;
-	    }
-	  }
-	  return hcfl
+int gcd(int a, int b) {
+   if (a == 0 || b == 0)
+   return 0;
+   else if (a == b)
+   return a;
+   else if (a > b)
+   return gcd(a-b, b);
+   else return gcd(a, b-a);
 }
-
